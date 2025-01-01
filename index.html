@@ -51,13 +51,146 @@
             <dd>MALLIKARJUN AKKI</dd>
 
             <dt>University</dt>
-            <dd>KLE TECHNOLOGICAL UNIVERSITY,HUBBALLI</dd>
+            <dd>KLE TECHNOLOGICAL UNIVERSITY, HUBBALLI</dd>
 
             <dt>Portfolio Topic/Domain</dt>
             <dd>Google</dd>
         </dl>
 
+        <h2>📚 Course Introduction</h2>
+        <p>The Design and Analysis of Algorithms course is designed to provide a deep understanding of the principles and techniques for designing efficient algorithms. The course focuses on the theoretical foundations and practical approaches for solving computational problems. Key topics include algorithmic design paradigms such as divide-and-conquer, dynamic programming, greedy algorithms, and backtracking.
+
+Students will explore the time and space complexity of algorithms, learning how to analyze and evaluate the performance of different algorithmic approaches. The course emphasizes problem-solving techniques to handle real-world challenges, providing students with the tools to optimize solutions and implement scalable, high-performance systems.
+
+By the end of the course, students will not only be equipped with the ability to design algorithms for a wide range of problems but also gain proficiency in analyzing the efficiency and limitations of their solutions. This knowledge is critical for tackling complex computational problems in fields like software engineering, data science, artificial intelligence, and more.</p>
+
+        <h2>🚀 Project Introduction</h2>
+        <p>The project focuses on designing a smart and efficient e-Bike Management System integrated into a city-wide transportation framework. The goal is to optimize the distribution, availability, and routing of electric bikes within the city, ensuring accessibility, convenience, and sustainability for users.</p>
+<h3>Algorithm for e-bike managment system</h3>
+        <pre><code>#include <iostream>
+#include <unordered_map>
+#include <climits>
+
+using namespace std;
+
+// Data structure to represent a docking station
+struct DockingStation {
+    int id;
+    string name;
+    int capacity;
+    int availableBikes;
+};
+
+// HashMap to store docking station data
+unordered_map<int, DockingStation> stations;
+
+// Function to update availability
+void updateAvailability(int stationId, int bikes) {
+    if (stations.find(stationId) != stations.end()) {
+        stations[stationId].availableBikes += bikes;
+        if (stations[stationId].availableBikes > stations[stationId].capacity) {
+            stations[stationId].availableBikes = stations[stationId].capacity;
+        } else if (stations[stationId].availableBikes < 0) {
+            stations[stationId].availableBikes = 0;
+        }
+    } else {
+        cout << "Station ID not found." << endl;
+    }
+}
+
+// Constant pricing function
+double getPrice() {
+    const double constantPrice = 10.0; // Example fixed price
+    return constantPrice;
+}
+
+// Dijkstra's Algorithm using adjacency matrix
+void dijkstra(int graph[3][3], int src, int V) {
+    int dist[V];               // Array to hold the shortest distances
+    bool visited[V] = {false}; // Visited nodes
+
+    // Initialize distances as infinite and visited as false
+    for (int i = 0; i < V; i++) {
+        dist[i] = INT_MAX;
+    }
+    dist[src] = 0;
+
+    for (int count = 0; count < V - 1; count++) {
+        // Find the minimum distance vertex from the unvisited vertices
+        int minDist = INT_MAX, u = -1;
+        for (int v = 0; v < V; v++) {
+            if (!visited[v] && dist[v] < minDist) {
+                minDist = dist[v];
+                u = v;
+            }
+        }
+
+        // Mark the chosen vertex as visited
+        visited[u] = true;
+
+        // Update the distances of adjacent vertices
+        for (int v = 0; v < V; v++) {
+            if (!visited[v] && graph[u][v] && dist[u] != INT_MAX && dist[u] + graph[u][v] < dist[v]) {
+                dist[v] = dist[u] + graph[u][v];
+            }
+        }
+    }
+
+    // Print the shortest distances from the source
+    cout << "Shortest distances from station " << src << ":" << endl;
+    for (int i = 0; i < V; i++) {
+        cout << "To station " << i << ": " << dist[i] << endl;
+    }
+}
+
+// Main function
+int main() {
+    // Initialize docking stations
+    stations[1] = {1, "Station A", 20, 10};
+    stations[2] = {2, "Station B", 15, 5};
+    stations[3] = {3, "Station C", 25, 8};
+
+    // Update bike availability
+    updateAvailability(1, -3); // Rent 3 bikes from Station A
+    updateAvailability(2, 2);  // Return 2 bikes to Station B
+
+    // Display updated availability
+    cout << "Station A available bikes: " << stations[1].availableBikes << endl;
+    cout << "Station B available bikes: " << stations[2].availableBikes << endl;
+
+    // Constant pricing example
+    cout << "Bike rental price: $" << getPrice() << endl;
+
+    // Graph representation of distances (using adjacency matrix)
+    int V = 3; // Number of stations
+    int graph[3][3] = {
+        {0, 5, 7}, // Station 0 to 1: 5, 0 to 2: 7
+        {5, 0, 3}, // Station 1 to 2: 3
+        {7, 3, 0}  // Station 2 back to others
+    };
+
+    // Calculate shortest distances using Dijkstra's Algorithm
+    dijkstra(graph, 0, V);
+
+    return 0;
+}
+</code></pre>
+
+        <h2>👥 Team Details</h2>
+        <ul>
+            <li><strong>Member 1:</strong> Anvay Nayak | 143 | 01fe23bcs205</li>
+            <li><strong>Member 2:</strong> Nitish  | 103 | 01fe23bcs</li>
+            <li><strong>Member 3:</strong> Rehan| 135 | 01fe23bcs</li>
+        </ul>
+
+        <h2>💭 Reflections</h2>
+
+        <p>Throughout this project, I learned the importance of teamwork, as well as the value of clear communication in solving complex problems. It was a challenging yet rewarding experience to apply theoretical knowledge to real-world scenarios. I look forward to further enhancing my skills and tackling even more complex problems in the future.</p>
+
         <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
     </section>
 </body>
 </html>
+
+
+    
