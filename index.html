@@ -3,37 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>E-Bike Management Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0073e6;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Hello, I'm Anvay Nayak 👋</h1>
-        <p>I am passionate about technology and problem-solving. Here's a glimpse of my work:</p>
+     <header>
+        
+        <p>Hello I am Anvay Nayak 👋 who is passionate about technology and problem-solving. Here's a glimpse of my work:</p>
     </header>
-
-    <section>
-        <h2>🛠️ Projects</h2>
-        <ul>
-            <li><strong>Project 1</strong>: A short description of your project1.</li>
-            <li><strong>Project 2</strong>: A short description of another project2.</li>
-        </ul>
-
-        <h2>🚀 Skills</h2>
-        <ul>
-            <li>C++, Python, JavaScript</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Web Development (React.js, Node.js)</li>
-        </ul>
-
-        <h2>🌐 Find Me Online</h2>
-        <ul>
-            <li><a href="https://github.com/your-github-username" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a></li>
-        </ul>
-
-        <h2>Portfolio Topic</h2>
+<h2>Portfolio Topic</h2>
         <dl>
             <dt>Course Name</dt>
             <dd>Algorithmic Problem Solving</dd>
@@ -56,16 +81,64 @@
             <dt>Portfolio Topic/Domain</dt>
             <dd>Google</dd>
         </dl>
+ <h2>📚 Course Introduction</h2>
 
-        <h2>📚 Course Introduction</h2>
-        <p>The Design and Analysis of Algorithms course is designed to provide a deep understanding of the principles and techniques for designing efficient algorithms. The course focuses on the theoretical foundations and practical approaches for solving computational problems. Key topics include algorithmic design paradigms such as divide-and-conquer, dynamic programming, greedy algorithms, and backtracking.
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#course-project">Course Project</a>
+        <a href="#learning-reflections">Learning Reflections</a>
+    </nav>
 
-Students will explore the time and space complexity of algorithms, learning how to analyze and evaluate the performance of different algorithmic approaches. The course emphasizes problem-solving techniques to handle real-world challenges, providing students with the tools to optimize solutions and implement scalable, high-performance systems.
+    <section id="home">
+        <h2>Introduction</h2>
+        <p>
+This course focuses on understanding data structures and algorithms and their real-time applications. You will explore various concepts like iteration, recursion, backtracking, and optimization while solving real-world problems, particularly in E-Bike management systems.</p>
+        <p>By learning these concepts, you will gain insights into how data structures like trees, graphs, and arrays, along with algorithm design techniques, are implemented in practical scenarios.</p>
+    </section>
 
-By the end of the course, students will not only be equipped with the ability to design algorithms for a wide range of problems but also gain proficiency in analyzing the efficiency and limitations of their solutions. This knowledge is critical for tackling complex computational problems in fields like software engineering, data science, artificial intelligence, and more.</p>
-
-        <h2>🚀 Project Introduction</h2>
-        <p>The project focuses on designing a smart and efficient e-Bike Management System integrated into a city-wide transportation framework. The goal is to optimize the distribution, availability, and routing of electric bikes within the city, ensuring accessibility, convenience, and sustainability for users.</p>
+    <section id="course-project">
+        <h2>Course Project: E-Bike Management System</h2>
+        <p><strong>Problem Space:</strong> Our project addressed challenges in urban mobility, like traffic congestion and inefficient bike-sharing systems. We identified docking station overcrowding and lack of real-time updates as key issues.</p>
+        <p>To address these, we designed a system featuring real-time tracking, automated reports, and a feedback mechanism. This approach improved resource allocation and user experience, making the solution scalable for expanding cities.</p>
+        <p><strong>Problem Definition:</strong> Develop a smart E-Bike Management System to enhance bike availability, optimize docking station usage, and ensure user satisfaction. Key features included bike rentals, returns, and premium subscriptions, while maintaining scalability.</p>
+        <p><strong>Team Details:</strong></p>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th>Sl.No.</th>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Function</th>
+                <th>Business Case Study</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>135</td>
+                <td>Rehan Balur</td>
+                <td>User Management, Bike Rental/Return</td>
+                <td>Ensuring secure and seamless onboarding of users.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>103</td>
+                <td>Nithish Palankar</td>
+                <td>Docking Station Management</td>
+                <td>Optimizing the management of docking stations to ensure bike availability.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>143</td>
+                <td>Anvay Nayak</td>
+                <td>Feedback and Reporting System</td>
+                <td>Collecting and analyzing user feedback to improve system functionality.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>142</td>
+                <td>Desaigouda</td>
+                <td>Route Optimization and Shortest Path Algorithms</td>
+                <td>Enabling users to find the fastest routes between docking stations, enhancing convenience and usability.</td>
+            </tr>
+        </table>
 <h3>Algorithm for e-bike managment system</h3>
         <pre><code>#include <iostream>
 #include <unordered_map>
@@ -176,21 +249,99 @@ int main() {
 }
 </code></pre>
 
-        <h2>👥 Team Details</h2>
-        <ul>
-            <li><strong>Member 1:</strong> Anvay Nayak | 143 | 01fe23bcs205</li>
-            <li><strong>Member 2:</strong> Nitish  | 103 | 01fe23bcs</li>
-            <li><strong>Member 3:</strong> Rehan| 135 | 01fe23bcs</li>
-        </ul>
-
-        <h2>💭 Reflections</h2>
-
-        <p>Throughout this project, I learned the importance of teamwork, as well as the value of clear communication in solving complex problems. It was a challenging yet rewarding experience to apply theoretical knowledge to real-world scenarios. I look forward to further enhancing my skills and tackling even more complex problems in the future.</p>
-
-        <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
     </section>
+    <section id="learning-reflections">
+        <h2>Course Learning Reflections</h2>
+        <ol>
+            <li><strong>Problems in Nature: Iteration, Recursion, and Backtracking</strong>
+                <p>Nature often presents us with problems that require different approaches to solve. For example, iteration helps in handling repetitive tasks, like processing large datasets one step at a time. Recursion, on the other hand, is ideal for problems that have a natural "divide-and-conquer" structure, like calculating Fibonacci numbers or solving Tower of Hanoi. Backtracking shines in scenarios where we need to explore all possibilities, such as solving a Sudoku puzzle or navigating a maze. These techniques teach us how to adapt our thinking to match the problem's structure.</p>
+            </li>
+            <li><strong>Space and Time Efficiency</strong>
+                <p>Space and time efficiency are at the heart of algorithm design. Imagine using an app that takes forever to load or crashes due to memory issues—this is why efficiency matters. Time efficiency ensures tasks are completed quickly, while space efficiency makes sure memory usage is minimal. Problems are categorized based on their complexity, such as linear (O(n)), quadratic (O(n²)), or even exponential (O(2^n)). Understanding these growth patterns helps us select the right approach, ensuring scalability and performance.</p>
+            </li>
+<li><strong>Design Principles from Chapter 2</strong>
+                <p>One of the biggest takeaways was learning how to simplify complex problems using design principles:
+                <ul>
+                    <li>Decomposition: Breaking problems into smaller parts, making them easier to solve.</li>
+                    <li>Abstraction: Focusing on the important details while ignoring irrelevant complexities.</li>
+                    <li>Pattern Recognition: Identifying recurring solutions, like using sliding windows for substring problems.</li>
+                </ul>
+                These principles aren’t just technical—they’re practical tools for approaching challenges in everyday life.</p>
+            </li>
+            <li><strong>Hierarchical Data and Tree Structures</strong>
+                <p>Trees are everywhere in computing, from file systems to decision-making processes. We studied different types of trees and how they solve real-world problems:
+                <ul>
+                    <li>Binary Search Trees (BSTs): Efficient for searching and sorting.</li>
+                    <li>AVL Trees: Self-balancing to maintain efficiency.</li>
+                    <li>2-3 Trees and Red-Black Trees: Optimized for faster insertion and deletion.</li>
+                    <li>Heaps: Used in priority queues for scheduling tasks.</li>
+                    <li>Tries: Perfect for autocomplete features in search engines.</li>
+                </ul>
+                Understanding these structures helped us realize how hierarchical data can be efficiently managed and manipulated.</p>
+            </li>
+            <li><strong>Array Query Algorithms</strong>
+                <p>Arrays might seem simple, but they’re incredibly powerful. Query algorithms like prefix sums, segment trees, and Fenwick trees make it possible to answer complex range-based questions in milliseconds. For example, they’re used in applications like calculating monthly expenses in financial apps or determining the fastest route in navigation systems. These algorithms teach us how to turn raw data into actionable insights.</p>
+            </li>
+            <li><strong>Trees vs. Graphs</strong>
+                <p>While trees are hierarchical, graphs represent connections, making them ideal for modeling relationships like social networks or city maps. Tree traversals (in-order, pre-order, post-order) are great for structured data, while graph traversals (DFS, BFS) excel at finding paths or connected components. Graphs are more versatile, but trees simplify tasks when hierarchy is key.</p>
+            </li>
+            <li><strong>Sorting and Searching Algorithms</strong>
+                <p>Sorting and searching algorithms are the backbone of efficient systems:
+                <ul>
+                    <li>Sorting: Algorithms like quicksort and merge sort help organize data, making retrieval faster.</li>
+                    <li>Searching: Binary search drastically reduces the time to find an item in a sorted list, much like how search engines return results almost instantly.</li>
+                </ul>
+                These techniques make systems intuitive and responsive.</p>
+            </li>
+            <li><strong>Graph Algorithms: Spanning Trees and Shortest Paths</strong>
+                <p>Graph algorithms bring real-world connectivity problems to life:
+                <ul>
+                    <li>Spanning Trees: Algorithms like Kruskal’s and Prim’s help minimize costs, such as laying cables for a network.</li>
+                    <li>Shortest Paths: Dijkstra’s and Bellman-Ford algorithms are critical for navigation systems like Google Maps, ensuring we always find the quickest route.</li>
+                </ul>
+                These algorithms show us how abstract problems can have tangible applications in daily life.</p>
+            </li>
+            <li><strong>Algorithm Design Techniques</strong>
+                <p>Throughout the course, we explored various design techniques:
+                <ul>
+                    <li>Divide and Conquer: Splitting problems into smaller parts, like merge sort.</li>
+                    <li>Dynamic Programming: Storing intermediate results to avoid redundant calculations, as seen in resource optimization.</li>
+                    <li>Greedy Algorithms: Making locally optimal choices for global solutions, like in Kruskal’s algorithm.</li>
+                    <li>Backtracking: Exploring all possibilities, perfect for puzzles and decision-making problems.</li>
+                </ul>
+                Each technique has its strengths, and choosing the right one often depends on the problem at hand.</p>
+            </li>
+                    
+</ol>
+
+        <h3>Thought-Provoking Questions</h3>
+        <ul>
+            <li><strong>How do you determine the most efficient approach?</strong>
+                <p>By analyzing the problem’s constraints and testing different strategies, we can evaluate which algorithm offers the best balance of speed and memory usage.</p>
+            </li>
+            <li><strong>How do you balance conflicting constraints?</strong>
+                <p>During our E-Bike Management System project, we had to balance user-friendly features with system scalability. Prioritizing core functionalities first helped us find this balance.</p>
+            </li>
+            <li><strong>What criteria do you use to evaluate effectiveness?</strong>
+                <p>A solution is effective if it solves the problem, handles edge cases, and performs well under stress. For example, our shortest path algorithm was tested with both small and large datasets.</p>
+            </li>
+            <li><strong>How do you adapt to unforeseen challenges?</strong>
+                <p>Flexibility is key. When we faced an issue with bike availability simulations, we switched to a randomization approach to mimic real-world conditions.</p>
+            </li>
+            <li><strong>When do you prioritize simplicity over optimization?</strong>
+                <p>For features like user feedback, simplicity was prioritized to keep the code maintainable. Optimization was reserved for performance-critical areas like routing.</p>
+            </li>
+            <li><strong>How does breaking down a problem help?</strong>
+                <p>Decomposing the E-Bike System into user and admin modules made the development process smoother and more manageable.</p>
+            </li>
+            <li><strong>How do you identify trade-offs between solutions?</strong>
+                <p>For example, we compared Dijkstra’s and Bellman-Ford algorithms. Dijkstra’s was faster but required non-negative weights, while Bellman-Ford handled negative weights but was slower.</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 E-Bike Management Portfolio</p>
+    </footer>
 </body>
 </html>
-
-
-    
